@@ -1,7 +1,18 @@
 // hive-udf example
 // remove string from stringlist included delimeter (",")
+// registration udf sequence
+// 1. compile to make class file 
+// javac RemoveElement.java
+// 2. move to right location to match packagename
+// mv RemoveElement.class /rightlocation
+// 3. make jar file
+// jar cvf RemoveElement.jar /rightlocation/RemoveElement.class
+// 4. add jar file in hiva
+// add jar RemoveElement.jar
+// 5. create temporary funcation
+// create temporary function remove_element as 'packagename.RemoveElement'
 
-package pacagename;
+package packagename;
 
 import java.util.ArrayList;
 import java.util.List;
