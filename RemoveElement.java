@@ -14,7 +14,12 @@
 
 package packagename;
 
-import java.util.ArrayList; import java.util.List; import org.apache.hadoop.hive.ql.exec.UDF; import org.apache.hadoop.hive.ql.exec.UDFArgumentException; import org.apache.hadoop.hive.ql.exec.UDFArgumentLengthException; import org.apache.hadoop.hive.ql.metadata.HiveException;
+import java.util.ArrayList; 
+import java.util.List; 
+import org.apache.hadoop.hive.ql.exec.UDF; 
+import org.apache.hadoop.hive.ql.exec.UDFArgumentException; 
+import org.apache.hadoop.hive.ql.exec.UDFArgumentLengthException; 
+import org.apache.hadoop.hive.ql.metadata.HiveException;
 
 public final class RemoveElement extends UDF {
   public String evaluate(String list, String removeString) throws HiveException { 
